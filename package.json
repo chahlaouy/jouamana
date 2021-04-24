@@ -1,0 +1,37 @@
+{
+  "name": "TunisiaForAll",
+  "version": "0.0.1",
+  "private": false,
+  "devDependencies": {
+    "react-scripts": "^1.1.4",
+    "react-test-renderer": "^16.3.1"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bootstrap": "^4.6.0",
+    "express": "^4.16.3",
+    "font-awesome": "^4.7.0",
+    "history": "^4.7.2",
+    "moment": "^2.29.1",
+    "prop-types": "^15.6.2",
+    "react": "^16.3.1",
+    "react-bootstrap-date-picker": "^5.1.0",
+    "react-datatable-with-bootstrap": "^3.2.2",
+    "react-dom": "^16.14.0",
+    "react-redux": "^5.0.7",
+    "react-responsive-modal": "^6.0.1",
+    "react-router-dom": "^4.3.1",
+    "react-router-redux": "^4.0.8",
+    "react-select-chain": "^1.0.1",
+    "redux": "^3.5.2",
+    "redux-devtools-extension": "^2.13.5",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "test": "react-scripts test"
+  },
+  "proxy": "http://localhost:3001/api/"
+}

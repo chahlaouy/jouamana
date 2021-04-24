@@ -31,7 +31,7 @@ class Structers extends Component {
 
   viewStructer = (viewStructerDetails) => {
     console.log("this.state ", viewStructerDetails);
-    history.push("/structer/view", { member: viewStructerDetails });
+    history.push("/structer/view", { structer: viewStructerDetails });
   };
 
   render() {

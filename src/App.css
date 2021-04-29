@@ -12,7 +12,39 @@
      background-size: cover;
      
  }
+.hidden{
+   display: none;
+}
+.modal-tunisia{
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-color: rgba(0,0,0, .5);
+   padding: 50px;
+   width: 100vw;
+   min-height: 100vh;
+   z-index: 999;
+}
+.modal-tunisia-header{
+   background-color: #fff;
+   padding: 25px;
+   
+}
+.modal-tunisia-body{
+   background-color: #fff;
+   padding: 25px;
 
+}
+.modal-tunisia-footer{
+   background-color: #fff;
+   padding: 25px;
+
+}
+.image-thumbnail{
+   max-width: 100%;
+   padding-right: 120px;
+   padding-left: 120px;
+}
  textarea {
     resize: none;
   }

@@ -4,6 +4,7 @@ import {connect } from 'react-redux';
 import history from '../../history'
 import Dropdown from "./Dropdown";
 import moment from 'moment'
+import axios from 'axios'
 
 class MemberDetails extends React.Component {
     constructor(props){
@@ -26,6 +27,7 @@ handleChangeFor = (propertyName) => (event) => {
     this.setState({ member: memberDetails });
   }
   handleCallback = (childData) =>{
+    console.log(childData)
     const { member } = this.state;
     const memberDetails = {
       ...member,
@@ -41,10 +43,12 @@ handleChangeFor = (propertyName) => (event) => {
   }
   handleUpdate(event) {
     event.preventDefault();
-    this.state.member.birthDate = new Intl.DateTimeFormat('en-US').format(this.state.birthDate),
-    this.state.member.joiningDate = new Intl.DateTimeFormat('en-US').format(this.state.joiningDate),
-    console.log("this.state ", this.state)
-    this.props.updateMember(this.state.member);
+  
+      this.state.member.birthDate = new Intl.DateTimeFormat('en-US').format(this.state.birthDate),
+      this.state.member.joiningDate = new Intl.DateTimeFormat('en-US').format(this.state.joiningDate),
+      console.log("this.state ", this.state)
+      this.props.updateMember(this.state.member);
+    // event.preventDefault();
   }
 
   render(){
